@@ -1,0 +1,66 @@
+<!DOCTTYPE html>
+<html>
+	<head>
+		<title>Aplicativo Hello World</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+		
+		
+		<!--Acessar o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+	
+	<body>	<!--Div com id para index e links pg inicial-->
+		<div data-role="page" id="pag1"> <!--página-->
+			<header data-role="header" id="cabeçalho" data-theme="b" data-position="fixed">
+				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+				<h2>App JQuery Mobile</h2>
+				<div data-role="navbar" class="ui-body-a" data-iconpos="left">
+					<ul>
+						<li><a a href="DOMpg1.html" data-icon="action">Exemplo DOM</a></li>
+					</ul>
+				</div>
+			</header>
+			
+			<section data-role="content" id="corpo"> <!--contentação section-->
+				<div style="text-align: center">
+					<h2>
+						<img src="https://img.icons8.com/office/16/000000/expand.png">
+						DOM (Document Object Model)
+					</h2>
+				</div>
+				<div style="text-align:justify">
+					<p> O <strong>DOM</strong>, sigla de <em>(Document Object Model)</em> é uma interface que representa como os documentos HTML e XML são lidos pelo seu browser. 
+					Após o browser ler seu documento HTML, ele cria um objeto que faz uma representação estruturada do seu documento e define meios de como essa estrutura pode ser 
+					acessada. Nós podemos acessar e manipular o DOM com <em>JavaScript</em>, é a forma mais fácil e usada.</br>
+					A estrutura do jQuery Mobile tem um mecanismo simples para manter o DOM organizado: sempre que uma página é 
+					carregada via <em>Ajax</em>, ela é sinalizada para remoção do DOM quando você navega para outra página (tecnicamente, em pagehide). 
+					Se você retornar a uma página excluída, o navegador poderá recuperar o arquivo de seu cache ou solicitará novamente o servidor, se necessário. 
+					No caso de listas aninhadas, removemos todas as páginas que compõem a lista aninhada quando você navega para uma página que não faz parte da lista. 
+					As páginas incluídas em uma configuração de várias páginas não serão afetadas por esse recurso - somente as páginas trazidas pelo Ajax são gerenciadas 
+					dessa maneira pelo jQuery Mobile.</p>
+					
+					<p>
+					Algumas referências sobre o assunto:</br></br>
+					<a href="http://demos.jquerymobile.com/1.4.0/pages/" target="_blank">Documentação Jquery Mobile</a></br></br>
+					<a href="https://www.youtube.com/watch?v=_1WJKar8akU">Vídeo: Curso Jquery Mobile #6</a>
+					</p>
+				</div>
+				
+				
+				
+			</section> 
+				
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local-->
+				<h4>By Miguel Batista</h4>
+			</footer> 
+</div>
+
+</body>
+</html>

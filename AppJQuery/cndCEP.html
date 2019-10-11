@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aplicativo Hello World</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+		
+		
+		<!--Acessar o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+		
+		<!--Adicionando JavaScript-->
+		<script type="text/javascript">
+		
+		$(document).ready(function() {
+			
+			function limpa_formulário_cep() {
+				//Limpa valores do formulário de cep.
+				$("rua").val("");
+				$("baiiro").val("");
+				$("cidade").val("");
+				$("uf").val("");
+				$("ibge").val("");
+			}
+			
+			//Quando o campo cep perde o foco.
+			$("cep").blur(function() {
+			
+				//Nova variável "cep" somente com dígitos.
+				var cep = $(this).val().replace(/\D/g, '');
+				
+				//Verifica se o campo cep possui valor informado.
+				if (cep != "") {
+					
+					//Expressão regular para validar o CEP.
+					var validacep = /^[0-9] {8}$/;
+					
+					//Valida o formato do CEP.
+					if(validacep.test(cep))	{
+					
+					    //Preenche os campos com "..." enquanto consulta webservice.
+						$("rua").val("...");
+						$("baiiro").val("...");
+						$("cidade").val("...");
+						$("uf").val("...");
+						$("ibge").val("...");
+						
+						//Consulta o webservice viacep.com.br/
+						$getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?",function(dados)	{
+						
+							if (!("erro" in dados))	{
+								//Atualiza os campos com os valores da consulta.
+								$("#rua").val(dados.logradouro);
+								$("#baiiro").val(dados.bairro);
+								$("#cidade").val(dados.localidade);
+								$("#uf").val(dados.uf);
+								$("#ibge").val(dados.ibge);
+							} //end if.
+							else {
+								//CEP pesquisado não foi encontrado. 
+								limpa_formulário_cep();
+								alert("CEP não encontrado.");
+							}
+						});
+					} //end if.
+					else {
+						//CEP é inválido. 
+						limpa_formulário_cep();
+						alert("Formato de CEP inválido.");
+					} //end if.
+					else {
+					//CEP sem valor, limpa formulário.
+					limpa_formulário_cep();
+					}
+			});		
+		});	
+	</script>
+</head>
+	
+			
+	<body>	<!--Div com id para index e links pg inicial-->
+		<div data-role="page" id="pag1"> <!--contentação da página-->
+			<header data-role="header" id="cabeçalho" data-theme="b"> <!--data-theme=tema, a e b padrao-->
+				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+			<!--contentação de cabeçalho-->
+				<h2>App JQuery Mobile</h2>
+			</header>
+			
+			<section data-role="content" id="corpo" class="ui-bar" data-theme="a"> <!--contentação section-->
+				<div>
+					<table>
+						<tr><td width="20%">
+							<img src="imagem/caixapostal.png" height="30%" width="80%" alt="logotipo app"></td>
+							<td width="80%"><div align="center"><h2>Consulte seu CEP</h2></div></td>
+						</tr>
+					</table>
+				</div>
+				<div style="padding-left: 50px; padding-right: 50px">
+					<form method="get" action=".">
+						<label>Cep:</label>
+						<input name="cep" type="text" id="cep" value="" size="10" maxlength="9" autofocus placeholder="Digite o CEP no formato 000000-00"/></br>
+						<!--size tamanho do campo || maxlength - número máximo de caracteres digitos ||
+						autofocus - foca naquele campo ao iniciar, placeholder - Texto de instrução no campo -->
+						<fieldset>
+							<label>Rua:</label>
+							<input name="rua" type="text" id="rua" size="60"/></br>
+							<label>Bairro:</label>
+							<input name="bairro" type="text" id="bairro" size="40"/></br>
+							<label>Cidade:</label>
+							<input name="cidade" type="text" id="cidade" size="40"/></br>
+							<label>Estado:</label>
+							<input name="uf" type="text" id="uf" size="2"/></br>
+							<label>IBGE:</label>
+							<input name="ibge" type="text" id="ibge" size="8"/></br>
+						</fieldset>
+					</form>
+					<div align="right">	<!--Botão popup dos créditos-->
+						<a href="#popmenu" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-action ui-btn-icon-left" data-transition="slideup">
+						Crédito</a>
+					</div>
+				</div>
+			</section> <!--Fim da section-->
+			<div data-role="popup" id="popmenu" class="ui-content" style="max-width:200px">
+				<div align="right"><img src="imagem/viacep.png" height="100%" width="100%"></div>
+			</div>
+			
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"> <!--position define local-->
+				<h4>By Miguel Batista</h4>
+			</footer> <!--Fim da footer-->
+	 	</div> 
+	</body>
+</html>

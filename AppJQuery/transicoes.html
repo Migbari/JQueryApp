@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOC Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+
+		<!--Acessar o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+
+<body>
+	<div data-role="page" id="pag9">
+		<header data-role="header" id="cabeçalho" data-position="fixed" data-theme="b"> <!--data-theme=tema, a e b padrao-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div>
+		</header>
+
+			<section data-role="content" id="corpo">
+				<div style="text-align:center;"> <!--CSS centraliza conteúdo DIV-->
+					<img src="imagem/iconsTransicao.png" width=20%>
+					<p> As transições ajudam seu app a ficar mais dinâmico e bonito.</p>
+				</div>
+				
+				<div style="text-align:center;"> <!--Fechamento no final - Css alinha conteudo da DIV-->
+					Fade
+					<div data-role="controlgroup" data-type="horizontal">
+						<a href="window.html" data-transition="fade" class="ui-btn">Janela</a>
+						<a href="#popupBasic" data-transition="fade" data-rel="popup" data-position-to="window" class="ui-btn">Pop-up</a>
+					</div>
+				
+					Flip
+					<div data-role="controlgroup" data-type="horizontal">
+						<a href="window.html" data-transition="flip" class="ui-btn">Janela</a>
+						<a href="#popupBasic" data-transition="flip" data-rel="popup" data-position-to="window" class="ui-btn">Pop-up</a>
+					</div>
+					
+					Turn
+					<div data-role="controlgroup" data-type="horizontal">
+						<a href="window.html" data-transition="turn" class="ui-btn">Janela</a>
+						<a href="#popupBasic" data-transition="turn" data-rel="popup" data-position-to="window" class="ui-btn">Pop-up</a>
+					</div>
+					
+					Flow
+					<div data-role="controlgroup" data-type="horizontal">
+						<a href="window.html" data-transition="flow" class="ui-btn">Janela</a>
+						<a href="#popupBasic" data-transition="flow" data-rel="popup" data-position-to="window" class="ui-btn">Pop-up</a>
+					</div>
+					
+					Slide
+					<div data-role="controlgroup" data-type="horizontal">
+						<a href="window.html" data-transition="slide" class="ui-btn">Janela</a>
+						<a href="#popupBasic" data-transition="slide" data-rel="popup" data-position-to="window" class="ui-btn">Pop-up</a>
+					</div>
+					
+					Slidefade
+					<div data-role="controlgroup" data-type="horizontal">
+						<a href="window.html" data-transition="slidefade" class="ui-btn">Janela</a>
+						<a href="#popupBasic" data-transition="slidefade" data-rel="popup" data-position-to="window" class="ui-btn">Pop-up</a>
+					</div>
+					
+					Slideup
+					<div data-role="controlgroup" data-type="horizontal">
+						<a href="window.html" data-transition="slideup" class="ui-btn">Janela</a>
+						<a href="#popupBasic" data-transition="slideup" data-rel="popup" data-position-to="window" class="ui-btn">Pop-up</a>
+					</div>
+					
+					Slidown
+					<div data-role="controlgroup" data-type="horizontal">
+						<a href="window.html" data-transition="slidown" class="ui-btn">Janela</a>
+						<a href="#popupBasic" data-transition="slidown" data-rel="popup" data-position-to="window" class="ui-btn">Pop-up</a>
+					</div>
+				</div>
+			</section>	
+			
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c">	<!--position define local--> <!--footer = rodapé -->
+				<h4>By Miguel Batista</h4>
+			</footer> 																		<!--Fim da footer-->
+			
+			<div data-role="popup" id="popupBasic" data-overlay-theme="b" data-theme="a"> 	<!--Quando clica no botao popup-->
+				<a href="#" data-role="button" data-rel="back" data-icon="delete" data-iconpos="notext" class="ui-btn-right"></a>
+				<div data-role="header"> <!--cabeçalho popup-->
+					<h2>Pop-up de transição</h2>
+					<p>Observe o efeito de transição quando este popup é aberto.</br>
+					Este mesmo efeito pode ser aplicado na transição de janelas.</p>
+				</div>
+			</div>	
+	</div>
+</body>
+</html>	
+					

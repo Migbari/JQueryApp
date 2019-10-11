@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>DOC Jquery Mobile</title>
+		<meta charset ="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+	
+		<!--Conexão com o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!---->
+	</head>
+	
+	<body>
+		<div data-role="page" id="pag1"> <!-- página-->
+			<header data-role="header" id="cabeçalho" data-position="fixed" data-theme="b"><!--cabeçalho-->
+				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>			
+				<h2>App Jquery Mobile</h2>
+			</header> 
+															
+		<section data-role="content" id="corpo"> <!--contentação section-->
+			<div style="text-align:center"> <!--Centralizar conteúdo da div-->
+				<h2>
+					<img src="https://img.icons8.com/office/16/000000/expand.png"> <!--Ícones da cdn-->
+					CDN (Content Delivery Network)
+				</h2>
+			</div>
+			<div style="text-align:justify">
+				<p><strong>CDN</strong> é a abreviação para <em>Content Delivery Network<em>, que é uma 
+				rede de servidores que armazenam o conteúdo de sites (na forma de “cache”) e depois
+				entregam este conteúdo rapidamente, utilizando a localização geográfica do usuário para
+				conectá-lo ao servidor que estiver mais próximo a ele.</br>
+				A CDN do JQuery Mobile é um projeto do JQuery Fundation baseado em elementos semânticos
+				em HMTL5, com bibliotecas vinculadas ao JQuery , JQuery Javascript e ao folhas de estilo CSS.</br>
+				Estes arquivos podem ser baixados e hospedados localmente, mas é recomendável vincular
+				aos arquivos hospedados no CDN do jQuery.</p>
+				
+				<p>
+				Algumas referências sobre o assunto:</br></br>
+				<a href="https://jquerymobile.com/download" target="_blank">Documentação Jquery Mobile</a></br></br>
+				<a href="https://www.youtube.com/watch?v=ufaMzXtzp5g">Vídeo: Você sabe o que é CND?</a>
+				</p>
+			</div>
+		</section> <!--Fim da section-->
+				
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local-->
+				<h4>By Miguel Batista</h4>
+			</footer> <!--Fim da footer-->
+		</div>
+	</body>
+
+</html>

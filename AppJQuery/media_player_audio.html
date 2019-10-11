@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aplicativo Hello World</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+		
+		
+		<!--Acessar o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+	
+			
+	<body>	
+		<div data-role="page" id="pag1"> 
+			<header data-role="header" id="cabeçalho" data-theme="b"> <!--data-theme=tema, a e b padrao-->
+				<a href="#"	data-role="button"	data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>				
+				<h2>App JQuery Mobile</h2>
+				<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div>
+			</header>
+			
+			<section data-role="content" id="corpo">
+				<div style="text-align=center">
+					<h2>Players de Áudio</h2>
+					<img src="imagem/u2_music.png"></br>
+						<audio id="musica" controls="controls"><!--controls faz aparecer o player no html-->
+							<source src="medias/u2_music.mp3" type="audio/mpeg"/>
+							<source src="medias/u2_music.m4a" type="audio/x-aac"/>
+							<source src="medias/u2_music.ogg" type="audio/ogg"/>
+							Desculpe! O formato de áudio é incompatível com seu dispositivo.
+							<!--Para Web o navegador seleciona qual player é compatível | Para mobile deixe somente a opção referente ao SO que vai usar-->
+						</audio> <!--O html reconhece estes três tipos de formato de áudios, MP3, OGG e M4A (compatível ITunes Player) -->
+				</div>
+			</section>
+			
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c">
+				<h4>By Miguel Batista</h4>
+			</footer>
+		</div>	
+	</body>
+</html>		

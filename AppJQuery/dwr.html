@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doc JQuery Mobile</title>
+		<meta charset ="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+				
+		<!--Conexão com o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+	
+	<body>
+		<div data-role="page" id="pag1"> <!--contentação da página-->
+			<header data-role="header" id="cabeçalho" data-position="fixed" data-theme="b"> <!--data-theme=tema, a e b padrao-->
+			<!--contentação de cabeçalho-->
+				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+				<h2>App Jquery Mobile</h2>
+				<div data-role="navbar" class="ui-body-a" data-iconpos="left">
+				
+					<!-- data-role="navbar" - Cria menu de botões
+						 class="ui-body-a" - Muda estilo de cor do menu
+						 data-iconpos="left" - Posiciona os icones dos botões a esquerda
+					-->
+					<ul>
+						<li><a href="imagens_r.html" data-icon="action">Imagens</a></li>
+						<li><a href="grids_r.html" data-icon="grid">Grade</a></li>
+						<li><a href="fonte_r.html" data-icon="bars">Fontes</a></li>
+					</ul>
+				</div>				<!--data-icon="" coloca um ícone do botão-->
+			</header>   <!--fim cabeçalho-->
+			
+			<section data-role="content" id="corpo"> 
+				
+				<div style="text-align: center"> <!--Centralizar conteúdo da DIV-->
+					<h2>
+						<img src="https://img.icons8.com/office/16/000000/expand.png"> <!--Ícones da CDN-->
+						Design de Web Responsivo
+					</h2>
+				</div>
+			
+			<div style="text-align:justify"> <!--Justificar texto da DIV-->
+				
+				<p> O Jquery Mobile é uma estrutura de interface de usuario baseada em Jquery que
+				funciona em todas as plataformas populares de telefones, tablets, e-readers e desktop.</br>
+				Construído com acessibilidade de e acesso universal em mente, seguimos os princípios de
+				aprimoramento progressivo e <b><em>Responsive Web Design (RWD)</em></b>.</br> 
+				A configuração baseada em marcação de HTML5 facilita o aprendizado, mas uma API
+				poderosa facilida a personalização profunda da biblioteca</br>
+				Dois importantes recursos do HTML ganham uma grande maior relevancia na responsividade de imagens na versão 5, 
+				os parametros <b><em>WIDTH</em></b> e <b><em>HEIGTH</em></b> e o conceito de contenção em grades (<b><em>GRID</em></b>).</p>
+				<p>
+				Algumas referências sobre o assunto:</br></br>
+					<a href="http://demos.jquerymobile.com/1.4.3/rwd/" target="_blank">Documentação Jquery Mobile</a></br></br>
+					<a href="https://www.youtube.com/watch?v=fmytaH1xaOM" target="_blank">Vídeo sobre responsividade</a>
+				</p>
+				<!--O parametro target="_blank" fará com que a URL abra no navegador do celular, não na aplicação-->
+								
+			</div>
+			
+			</section> <!--Fim da section-->
+				
+				<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local-->
+					<h4>By Miguel Batista</h4>
+				</footer> <!--Fim da footer-->
+				
+</div>
+	
+</body>
+	<!--datarole"navbar"/menu-->
+	<!--datarel/voltar, dataicon/icone nos botoes ,iconpos/posição do btn-->
+
+</html>

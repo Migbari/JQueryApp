@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOC Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+
+		<!--Acessar o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+
+<body>
+	<div data-role="page" id="pag10">
+		<header data-role="header" id="cabeçalho" data-position="fixed" data-theme="b"> <!--data-theme=tema, a e b padrao-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div>
+		</header>
+
+			<section data-role="content" id="corpo">
+				<div style="text-align:center;"> <!--CSS centraliza conteúdo DIV-->
+					<img src="imagem/iconsIcone.png" width=20%>
+					<p>Os JQuery Mobile possui por padrão um conjunto de ícones que podem ser usados via CDN ou 
+					baixados para serem usados juntos ao projeto.</p>
+					Também é posssível criar ícones personalizados para serem inseridos em seu projeto.
+				</div>
+				
+				<h3>Exemplos</h3>
+				<div style="padding-left: 100px; padding-right: 100px">
+					Relação de ícones
+					<button class="ui-btn ui-btn-icon-left ui-icon-bullets">bullets</button>
+					<button class="ui-btn ui-btn-icon-left ui-icon-gear">gear</button>
+					<button class="ui-btn ui-btn-icon-left ui-icon-home">home</button>
+					<button class="ui-btn ui-btn-icon-left ui-icon-mail">mail</button>
+					<button class="ui-btn ui-btn-icon-left ui-icon-shop">shop</button>
+					<button class="ui-btn ui-btn-icon-left ui-icon-video">video</button>
+					
+					<div style="text-align:right;">
+						<a href="http://demos.jquerymobile.com/1.4.5/icons/" target="_blank">Relação Ícone</a>
+					</div>
+					Posição dos Ícones
+					<a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">carat-l</a>
+					<a href="#" class="ui-btn ui-icon-carat-r ui-btn-icon-right">carat-r</a>
+					<a href="#" class="ui-btn ui-icon-carat-u ui-btn-icon-top">carat-u</a>
+					<a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-bottom">carat-d</a>
+					
+					Ícones personalizados - Sem disco
+					<button class="ui-btn ui-nodisc-icon ui-btn-icon-left ui-btn-b ui-icon-power">power</button>
+					Ícones personalizados - Sem texto
+					<a href="#" class="ui-btn ui-shadow ui-btn-inline ui-icon-home ui-btn-icon-notext"></a>
+					<a href="#" class="ui-btn ui-shadow ui-btn-inline ui-icon-location ui-btn-icon-notext"></a>
+					<a href="#" class="ui-btn ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-notext"></a>
+					</br>
+					Ícones personalizados - Wrapper
+					<div class="ui-nodisc-icon">
+						<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-b ui-btn-inline">Delete</a>
+						<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext ui-btn-b ui-btn-inline">Plus</a>
+						<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-minus ui-btn-icon-notext ui-btn-b ui-btn-inline">Minus</a>
+						<a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-check ui-btn-icon-notext ui-btn-b ui-btn-inline">Check</a>
+					</div>
+					<p>Listview</br></br></p>
+					<ul data-role="listview" data-insert="true" class="ui-nodisc-icon ui-alt-icon">
+						<li data-icon="user"><a href="#" data-icon="user">Antonio</a></li>
+						<li data-icon="user"><a href="#" data-icon="user">Pedro</a></li>
+						<li data-icon="user"><a href="#" data-icon="user">José</a></li>
+					</ul>
+							
+				</div>
+			
+			</section>	
+			
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c">	
+				<h4>By Miguel Batista</h4>
+			</footer>
+	</div>	
+	
+</body>
+</html>	

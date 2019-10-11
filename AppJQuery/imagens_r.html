@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>Doc JQuery Mobile</title>
+			<meta charset ="UTF-8"> 
+			<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+							
+			<!--Conexão com o Jquery Mobile e copiar as TAGs para conexão-->
+			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+			<!--Fim conexão com JQuery-->
+			
+			<!--Conexão de fontes do Google-->
+			<link href="https://fonts.googleapis.com/css/css?family=Lobster|Roboto|ZCOOL+KuaiLe" rel="stylesheet">
+			
+			<style>
+				@media screen and (max-width:480px) {
+					html {font-size: 50%;}
+				}
+				@media screen and (min-width:481px) and (max-width:768px) {
+					html {font-size: 100%;}
+				}
+			<!-- Media Queries - Adaptam a pagina ao tamanho do dispositivo (neste exemplo 50% do tamanho 
+				original de fonte se o dispositivo tiver resolução de até 480px e 100% se entre 481px a 768px)	-->
+			</style>
+		</head>
+
+<body>
+<div data role="page" id="pag1">
+	<header data-role="header" id="cabeçalho" data-theme="b">
+		<a href="#" data-role="button" dat-position="fixed" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+			<h2>App Jquery Mobile</h2>
+				<div data-role="navbar" class="ui-body-a" data-iconpos="left">
+					<ul>
+						<li><a href="imagens_r.html" data-icon="action">Imagens</a></li>
+						<li><a href="grids_r.html" data-icon="grid">Grade</a></li>
+						<li><a href="fonte_r.html" data-icon="bars">Fontes</a></li>
+					</ul>
+</div>
+
+	<section data-role="content" id="corpo" class="ui-bar" data-theme="a"> 
+		<div style="text-align: center;">
+			<h2>Imagens Responsivas</h2>
+			<p>O HTML5 trouxe consigo um novo foco, tanto em projetos WEB quando em projetos de APP híbridos,
+			a <strong>responsividade</strong> pelo dispositivo.</br>
+			Este conceito usa a semantica do dispositivo e os conceitos de <strong>AJAX</strong> para 
+			dimensionar o tamanho da imagem a ser utilizada ou até mesmo qual imagem será utilizada.
+			Para isto o HTML5 trouxe duas novas TAGs, a <strong>PICTURE</strong> e a <strong>SOURCE</strong>.		
+			</p>
+		</div>
+		
+		<div>
+			<h3>Imagens Original (200 x 200)</h3></br>
+				<img src="imagem/usuarios.png" alt="imagem original"></br>
+			<h3>25% do dispositivo</h3></br>
+				<img src="imagem/usuarios.png" alt="imagem 25%" width="25%" height="25%"></br>
+			<h3>100% do dispositivo</h3></br>
+				<img src="imagem/usuarios.png" alt="imagem 100%" width="100%" height="100%"></br>
+				
+				
+			<h3>Imagens que muda</h3></br>
+				<picture>
+					<source media="(min-width: 650px" srcset="imagem/usuarios3.png">
+					<source media="(min-width: 465px" srcset="imagem/usuarios2.png">
+					<img src="imagem/usuarios3.png" alt="Flowers" style="width:auto;">
+				</picture>
+				
+				
+			
+		</div>
+	</section>
+
+
+	<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local-->
+		<h4>By Miguel Batista</h4>
+	</footer> <!--Fim da footer-->
+</body>
+
+</html>
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	

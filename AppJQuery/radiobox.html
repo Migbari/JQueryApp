@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doc Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Conexão o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+
+<body>
+	<div data-role="page" id="pag5">
+		<header data-role="header" id="cabeçalho" data-theme="b"> <!--Cabeçalho-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">Return</a>
+			<!--role="button"criou botao, rel="back" fez voltar, icon="arrow-1 criou ícone botao, iconpos="notext" não permitiu texto como mostra acima-->
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div> 	<!-- data-role="navbar" - Cria menu de botões-->
+		</header> 																	<!--class="ui-body-a" - Muda estilo de cor do menu-->
+																					<!--data-iconpos="left" - Posiciona os icones dos botões a esquerda-->
+												
+																																				
+	<section data-role="content" id="corpo">
+		<div style="text-align: center"> <!--CSS centraliza conteúdo da DIV-->
+			<img src="imagem/iconsRadioBox.png" width="20%">
+			<p>Tanto os RadioBox (Botão de Radio) quanto os CheckBox (Botão de Seleção) são recursos que
+			ganharam uma importancia muito grande em projetos mobile por permitirem a comunicação entre o
+			usuário e o app com poucos toques.</p>
+		</div>
+
+		<h3>Exmplos</h3>
+
+		<div style="text-align: justify"> <!--CSS cetralizar conteúdo DIV-->
+
+			Radiobox Simples
+				<form>
+					<input type="radio" name="radio1" id="radio1">
+					<label for="radio1">Radiobox</label>
+				</form>
+				
+			Checkbox Simples
+				<form>
+					<input type="checkbox" name="check1" id="check1">
+					<label for="check1">Checkbox</label>
+				</form>
+				
+			Mini Radiobox
+				<form>
+					<input type="radio" name="radio2" id="radio21" data-mini="true" value="a">
+					<label for="radio21">Opção 1</label>
+					<input type="radio" name="radio2" id="radio22" data-mini="true" value="b">
+					<label for="radio22">Opção 2</label>
+				</form>
+				
+				<form>
+					<fieldset data-role="controlgroup">
+						<legend>Radiobox Grupo Vertical</legend>
+							<input type="radio" name="opcao2" id="op3">
+							<label for="op3">Opção 3</label>
+							<input type="radio" name="opcao2" id="op4">
+							<label for="op4">Opção 4</label>
+							<input type="radio" name="opcao2" id="op5">
+							<label for="op5">Opção 5</label>
+					</fieldset>
+				</form>
+										
+				<form>
+					<fieldset data-role="controlgroup" data-type="horizontal" data-theme="b">
+							<!--data-theme="b" para mudar cor do radiobox-->
+						<legend>Radiobox Grupo Horizontal</legend>
+							<input type="radio" name="opcao2" id="op6">
+							<label for="op6">Opção 6</label>
+							<input type="radio" name="opcao2" id="op7">
+							<label for="op7">Opção 7</label>
+							<input type="radio" name="opcao2" id="op8">
+							<label for="op8">Opção 8</label>
+					</fieldset>
+				</form>
+				
+				<div style="padding-left: 10px; padding-right: 200px;">
+				<form>
+					<fieldset data-role="controlgroup" data-type="vertical" data-iconpos="right">
+						<legend>Radiobox Seleção a direita</legend>
+							<input type="checkbox" name="check2" id="op9">
+							<label for="op9">Opção 9</label>
+							<input type="checkbox" name="check2" id="op10">
+							<label for="op10">Opção 10</label>
+							<input type="checkbox" name="check2" id="op11">
+							<label for="op11">Opção 11</label>
+					</fieldset>
+				</form>				
+				</div>
+		</div>
+	</section>
+	
+		<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local--> <!--footer = rodapé -->
+			<h4>By Miguel Batista</h4>
+		</footer> <!--Fim da footer-->
+	
+</div>
+</body>
+</html>	

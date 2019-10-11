@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOC Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+
+		<!--Acessar o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+
+<body>
+	<div data-role="page" id="pag8">
+		<header data-role="header" id="cabeçalho" data-position="fixed" data-theme="b"> <!--data-theme=tema, a e b padrao-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div>
+		</header>
+
+			<section data-role="content" id="corpo">
+				<div style="text-align:center;"> <!--CSS centraliza conteúdo DIV-->
+					<img src="imagem/iconsPainel.png" width=20%>
+					<p>Os paineis são um recurso muito importante para os designer mobile, pois permite que menus e
+					outros recursos que não estão sendo utilizados possam ser ocultos e exibidos quando
+					necessário.</p>
+				</div>
+			</section>
+			
+				<h3>Exemplos</h3>
+				<div style="padding-left: 150px; padding-right: 150px;">
+					<a href="#esquerda" class="ui-btn">Esquerda</a>
+					<br>
+					<a href="#direita" class="ui-btn" data-position="right" data-display="reveal">Direita</a>
+				</div>
+			</section>
+
+			<footer data-role="footer" id="rodape" data-theme="c">
+				<h4>By Miguel Batista</h4>
+			</footer>
+
+			<div data-role="panel" data-display="overlay" id="esquerda"> <!--painel esquerda-->
+				<p>Painel Esquerda</p>
+				<a href="#" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Botão 1</a>
+				<a href="#" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Botão 2</a>
+				<a href="#" class="ui-btn ui-icon-carat-r ui-btn-icon-right">Botão 3</a>
+				<p></p>
+				<a href="#" data-rel="close" class="ui-btn">Fechar painel</a>
+			</div>
+
+			<div data-role="panel" id="direita" data-position="right" data-display="push"> <!--painel direita-->
+				<p>Painel Direira</p>
+				<a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Botão 4</a>
+				<a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Botão 5</a>
+				<a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Botão 6</a>
+				<p></p>
+				<a href="#" data-rel="close" class="ui-btn">Fechar painel</a>
+			</div>
+			<!--data-display="reveal" - o painel ficara sob a pagina e revelara em quanto a pagina desliza.
+				data-display="overlay" - o painel aparecera no topo do conteudo da página
+				data-display="push" - anima o painel e a página ao mesmo tempo.-->
+
+	</div>
+</body>
+</html>

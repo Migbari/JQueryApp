@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doc JQuery Mobile</title>
+		<meta charset ="UTF-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+				
+		<!--Conexão com o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+	
+	<body>
+		<div data-role="page" id="pag1"> <!--contentação da página-->
+			<header data-role="header" id="cabeçalho" data-position="fixed" data-theme="b"> <!--data-theme=tema, a e b padrao-->
+				<!--contentação de cabeçalho-->
+				<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+				<h2>App Jquery Mobile</h2>
+						<!-- data-iconpos="left" - Posiciona os icones dos botões a esquerda -->
+				         <!--data-icon="" coloca um ícone do botão-->
+			</header>   <!--fim cabeçalho-->
+			
+			<section data-role="content" id="corpo"> 
+				
+				<div style="text-align: center"> <!--Centralizar conteúdo da DIV-->
+					<h2>
+						<img src="https://img.icons8.com/office/16/000000/expand.png"> <!--Ícones da CDN-->
+						O que é o JQuery Mobile
+					</h2>
+				</div>
+			
+			<div style="text-align:justify"> <!--Justificar texto da DIV-->
+				
+				<p><b>jQuery Mobile</b> é um framework de interface gráfica (UI) em plataforma cruzada para smartphones
+				e tablets, construído sobre as fundações da biblioteca jQuery. [...] O JQuery Mobile utiliza uma estrutura
+				de CDNs espalhados pelo mundo todo para garantir uma conectividade dos recursos disponibilizados em diversos apps.
+				Outra vantagem que o JQuery Mobile oferece aos desenvolvedores de <b>app híbridos</b> é que as atualizações de estilos e 
+				comportamentos são realizadas em segundo plano, sem a necessidade da criação de novas versões dos aplicativos</p>
+				<p>
+				Algumas referências sobre o assunto:</br></br>
+					<a href="http://demos.jquerymobile.com/1.4.3/rwd/" target="_blank">Documentação Jquery Mobile</a></br></br>
+					<a href="https://software.intel.com/pt-br/xdk/article/jquery-mobile-basics" target="_blank">Intel XDK (Documentação)</a>
+				</p>
+				<!--O parametro target="_blank" fará com que a URL abra no navegador do celular, não na aplicação-->
+								
+			</div>
+			
+			</section> <!--Fim da section-->
+				
+				<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local-->
+					<h4>By Miguel Batista</h4>
+				</footer> <!--Fim da footer-->
+				
+</div>
+	
+</body>
+	<!--datarole"navbar"/menu-->
+	<!--datarel/voltar, dataicon/icone nos botoes ,iconpos/posição do btn-->
+
+</html>

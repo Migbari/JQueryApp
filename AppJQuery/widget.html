@@ -1,0 +1,83 @@
+		<html>
+	<head>
+		<title>Doc Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Conexão o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+	
+<body>
+	<div data-role="page" id="pag1">
+		<header data-role="header" id="cabeçalho" data-theme="b"> <!--Cabeçalho-->
+		<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">Return</a>
+		<!--role="button"criou botao, rel="back" fez voltar, icon="arrow-1 criou ícone botao, iconpos="notext" não permitiu texto como mostra acima-->
+		<h2>App JQuery Mobile</h2>
+		<div data-role="navbar" class="ui-body-b" data-iconpos="left">
+		<!-- data-role="navbar" - Cria menu de botões
+		class="ui-body-a" - Muda estilo de cor do menu
+		data-iconpos="left" - Posiciona os icones dos botões a esquerda
+		-->			
+			<ul>
+				<li><a href="imagens_r.html" data-icon="action">Imagens</a></li>
+				<li><a href="grids_r.html" data-icon="grid">Grade</a></li>
+				<li><a href="fonte_r.html" data-icon="bars">Fontes</a></li>
+			</ul>          <!--data-icon="" coloca um ícone do botão-->
+	</div>
+		</header> <!--Fim do cabeçalho-->
+	
+	<section data-role="content" id="corpo"> <!--contentação section-->
+	
+		<div style="text-align:center"> <!--Centralizar conteúdo da div-->
+			<h2>
+				<img src="https://img.icons8.com/ios/50/000000/drafting-compass.png"> <!--Ícones da CDN-->
+				Ferramentas Jquery Mobile
+			</h2>
+		</div>
+		
+	<div class="ui-grid-b" style="text-align: center"><!--ui-grid-... (a-2 colunas, b-3 colunas, c-4 colunas) -->
+		<!--Primeira linha da grade-->
+		<div class="ui-block-a">
+			<a href="botoes.html"><img src="imagem/iconsBotao.png" width="50%"></a> <!--link para pg botao-->
+		</div> 
+		<div class="ui-block-b">
+			<a href="listas.html"><img src="imagem/iconsLista.png" width="50%"></a> <!--link para pg listas-->
+		</div> 
+		<div class="ui-block-c">
+			<a href="sanfona.html"><img src="imagem/iconsDobraveis.png" width="50%"></a>
+		</div> 
+		
+		<!--Primeira linha da grade-->
+		<div class="ui-block-a">
+			<a href="radiobox.html"><img src="imagem/iconsRadioBox.png" width="50%"></a>
+		</div> <!--Segunda linha da grade-->
+		<div class="ui-block-b">
+			<a href="placares.html"><img src="imagem/iconsPlacares.png" width="50%"></a>
+		</div> 
+		<div class="ui-block-c">
+			<a href="tabelas.html"><img src="imagem/iconsTabela.png" width="50%"></a>
+		</div> 
+		
+		<!--Terceira linha da grade-->
+		<div class="ui-block-a">
+			<a href="paines"><img src="imagem/iconsPainel.png" width="50%"></a>
+		</div> 
+		<div class="ui-block-b">
+			<a href="transicoes.html"><img src="imagem/iconsTransicao.png" width="50%"></a>
+		</div> 
+		<div class="ui-block-c">
+			<a href="icones.html"><img src="imagem/iconsIcone.png" width="50%"></a>
+		</div>
+		
+	</section> <!--Fim da section-->
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"> 
+			<!--position define local--> <!--footer = rodapé -->
+				<h4>By Miguel Batista</h4>
+			</footer> <!--Fim da footer-->
+	</div>
+</body>
+</html>
+

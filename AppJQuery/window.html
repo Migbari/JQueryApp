@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Doc Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Conexão o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+	
+<body>
+	<div data-role="page" id="pag1">
+		<header data-role="header" id="cabeçalho" data-theme="b"> <!--Cabeçalho-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-1" data-iconpos="notext" class="ui-btn-left">Return</a>
+			<!--role="button"criou botao, rel="back" fez voltar, icon="arrow-1 criou ícone botao, iconpos="notext" não permitiu texto como mostra acima-->
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-b" data-iconpos="left"></div>
+		</header> <!--Fim do cabeçalho-->
+	
+	<section data-role="content" id="corpo"> <!--contentação section-->
+	
+		<div style="text-align:center"> <!--Centralizar conteúdo da div-->
+			<h2>
+				<img src="https://img.icons8.com/ios/50/000000/drafting-compass.png"> <!--Ícones da CDN-->
+				Janela de Transições
+			</h2>
+		</div>
+		
+		<div class="ui-grid-b" style="text-align: center"> <!--ui-grid-... (a-2 colunas, b-3 colunas, c-4 colunas) -->
+			<p>Observe o efeito de transição quando esta janela é aberta.</br>
+			Este mesmo efeito pode ser aplicado na transição de um pop-up.</p>
+		</div>
+	</section> 
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"> 
+					<h4>By Miguel Batista</h4>
+			</footer>
+	</div>
+
+</body>
+</html>
+
+<!--Esta é a página dwr com inclusão dos widgets-->

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doc Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Conexão o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+
+<body>
+	<div data-role="page" id="pag3"> <!-- página 3-->
+		<header data-role="header" id="cabeçalho" data-theme="b"> <!--Cabeçalho-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">Return</a>
+			<!--role="button"criou botao, rel="back" fez voltar, icon="arrow-1 criou ícone botao, iconpos="notext" não permitiu texto como mostra acima-->
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div>
+		</header>
+		
+		<section data-role="content" id="corpo"> <!--contentação section-->
+			<div style="text-align:center">
+				<img src="imagem/iconsLista.png" width="20%">
+				<p> As listas são um dos recursos amis usados do JQuery. Existem dois tipoos de listas, as <strong>
+					ordenadas</strong> e as <strong>não ordenadas</strong>.</br>
+					Mas as listas possui muitas funcionalidades num projeto mobile.</p>
+			</div>
+			
+			<h2>Exemplos</h2>
+				<h3>Listas ordenadas</h3>
+				<div data-role="controlgroup">
+					<ol data-role="listview">
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+					</ol>
+				</div>
+				</br>	
+				
+			<h3>Listas não ordenadas</h3>
+				<div data-role="controlgroup">
+					<ul data-role="listview">
+						<li>Item 4</li>
+						<li>Item 5</li>
+						<li>Item 6</li>
+					</ul>
+				</div>	
+				</br>	
+			
+			<h3>Listas com links</h3>
+				<div data-role="controlgroup">
+					<ul data-role="listview">
+						<li><a href="#">Item 7</a></li>
+						<li><a href="#">Item 8</a></li>
+						<li><a href="#">Item 9</a></li>
+					</ul>			
+				</div>
+				</br>
+			
+			<h3>Listas com Divisor</h3>
+				<div data-role="controlgroup" data-diviser-theme="b">
+					<ul data-role="listview">
+						<li data-role="list-divider">Primeiros Itens</li>
+						<li><a href="#">Item 10</a></li>
+						<li><a href="#">Item 11</a></li>
+						<li data-role="list-divider">Outros Itens</li>
+						<li><a href="#">Item 12</a></li>
+						<li><a href="#">Item 13</a></li>
+						<li><a href="#">Item 14</a></li>
+					</ul>			
+				</div>
+				</br>
+				
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"> 
+			<!--footer = rodapé -->
+				<h4>By Miguel Batista</h4>
+			</footer> <!--Fim da footer-->
+	</div>
+</body>
+</html>
+				

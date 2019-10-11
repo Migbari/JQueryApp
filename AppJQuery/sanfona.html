@@ -1,0 +1,108 @@
+<html>
+	<head>
+		<title>Doc Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Conexão o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+
+<body>
+	<div data-role="page" id="pag4">
+		<header data-role="header" id="cabeçalho" data-theme="b"> <!--Cabeçalho-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">Return</a>
+			<!--role="button"criou botao, rel="back" fez voltar, icon="arrow-1 criou ícone botao, iconpos="notext" não permitiu texto como mostra acima-->
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div> 	<!-- data-role="navbar" - Cria menu de botões-->
+		</header> 																	<!--class="ui-body-a" - Muda estilo de cor do menu-->
+																					<!--data-iconpos="left" - Posiciona os icones dos botões a esquerda-->
+
+
+	<section data-role="content" id="corpo">
+		<div style="text-align: center">
+			<img src="imagem/iconsDobraveis.png" width="20%">
+			<p> Os Dobráveis (Collpsible) ou simplesmente Sanfonas, são elementos que permitem expandir ou
+			reduzir um conteúdo tocado.
+			Iremos ver dois tipos de Sanfonas, as <strong>Simples</strong> e os <strong>Filtros</strong>.</p>
+		</div>
+
+		<h3>Exmplos</h3>
+		Sanfona Simples
+		<div data-role="collapsible">
+			<h4>O uso de celular</h4>
+			<p> Em muitos países, como a França, crianças menores de 14 anos, são proíbidas de levarem
+			celulares para as aulas.</p>
+		</div>
+		</br>
+		Sanfona Aberta
+		<div data-role="collapsible" data-collapsed="false"> <!--Como no exemplo acima, porem cm data-collapsed="false" para-->
+			<h4>Lista de alunos.</h4>						 <!--iniciar cm sanfona aberta e utilizando lista-->
+			<ul>
+				<li>Aberlado</li>
+				<li>Davi</li>
+				<li>Sabrina</li>
+			</ul>
+		</div>
+		</br>
+		Sanfona com icones diferentes
+		<div data-role="collapsible" data-collapsed-icon="arrow-d-r" data-expanded-icon="arrow-u-r">
+			<h4>Disciplinas</h4>
+			<ul data-role="listview">
+				<li>Programação Mobile</li>
+				<li>Lógica de Programação</li>
+				<li>Desenvolvimento Web</li>
+			</ul>
+		</div>
+		</br>
+		Formulário com efetio Sanfona
+		<form>
+			<fieldset data-role="collapsible">
+		<legend>Votação</legend>
+		<label for="tnome">Nome</label>
+		<input type="text" name="tnome" id="tnome" placeholder="Digite o nome">
+			<div data-role="controlgroup">
+				<input type="radio" name="voto" id="cand1">
+				<label for="cand1">Candidato 01</label>  <!--***-->
+				<input type="radio" name="voto" id="cand2">
+				<label for="cand2">Candidato 02</label>	 <!--***-->
+				<input type="radio" name="voto" id="cand3">
+				<label for="cand3">Candidato 01</label>	 <!--***-->
+			</div>
+			</fieldset>
+		</form>
+		</br>
+		Sanfonas em conjunto
+		<div data-role="collapsibleset">
+			<div data-role="collapsible" data-insert="false">
+			<h4>Disciplinas Programação.</h4>
+				<ul data-role="listview">
+					<li>Programação Mobile</li>
+					<li>Lógica de Programação</li>
+					<li>Desenvolvimento Web</li>
+				</ul>
+			</div>
+			<div data-role="collapsible" data-insert="false">
+				<h4>Disciplinas Gestão.</h4>
+				<ul data-role="listview">
+					<li>Gestão de Projetos</li>
+					<li>Gestão de Infraestrutura</li>
+					<li>Gestão de Pessoas</li>
+				</ul>
+			</div>
+	    </div>
+
+	</section>
+
+		<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local-->
+			<h4>By Miguel Batista</h4>
+		</footer> <!--Fim da footer-->
+
+	</div>
+</body>
+
+</html>
+
+

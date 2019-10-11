@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aplicativo Hello World</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+		
+		
+		<!--Acessar o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+	
+			
+	<body>	
+		<div data-role="page" id="pag1"> 
+			<header data-role="header" id="cabeçalho" data-theme="b"> <!--data-theme=tema, a e b padrao-->
+				<a href="#"	data-role="button"	data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>				
+				<h2>App JQuery Mobile</h2>
+			</header>
+			
+			<section data-role="content" id="corpo">
+			<div style="text-align=center">
+			<h2>Players de Médias</h2>
+			
+			<div class="ui-grid-a">
+			
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a">
+					<a href="media_player_audio.html">
+						<img src="imagem/audio.png" height="100%" width="100%" alt="icone audio"/>
+					</a>
+				</div></div>
+				
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a">
+					<a href="media_player_video.html">
+						<img src="imagem/video.png" height="100%" width="100%" alt="icone video"/>
+					</a>
+				</div></div>
+				
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a">
+					<a href="media_player_youtube.html">
+						<img src="imagem/youtube.png" height="100%" width="100%" alt="icone video"/>
+					</a>
+				</div></div>
+				
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a">
+					<a href="media_api_deezer.html">
+						<img src="imagem/deezer.png" height="100%" width="100%" alt="icone Dezeer"/>
+					</a>
+				</div></div>
+				
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a">
+					<a href="media_api_spotify.html">
+						<img src="imagem/spotify.png" height="100%" width="100%" alt="icone Spotify"/>
+					</a>
+				</div></div>
+				
+				<div class="ui-block-a"><div class="ui-bar ui-bar-a">
+				
+				
+				</div></div>
+			
+			</div>
+			
+			</section>
+			
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c">
+				<h4>By Miguel Batista</h4>
+			</footer>
+		</div>	
+	</body>
+</html>		

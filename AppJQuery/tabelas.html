@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doc Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Conexão o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+
+<body>
+	<div data-role="page" id="pag7"> <!--Pagina 6-->
+		<header data-role="header" id="cabeçalho" data-theme="b"> <!--Cabeçalho-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">Return</a>
+			<!--role="button"criou botao, rel="back" fez voltar, icon="arrow-1 criou ícone botao, iconpos="notext" não permitiu texto como mostra acima-->
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div> 	<!-- data-role="navbar" - Cria menu de botões-->
+		</header> 																	<!--class="ui-body-a" - Muda estilo de cor do menu-->
+																					<!--data-iconpos="left" - Posiciona os icones dos botões a esquerda-->
+												
+																																				
+	<section data-role="content" id="corpo">
+		<div style="text-align: center"> <!--CSS centraliza conteúdo da DIV-->
+			<img src="imagem/iconsTabela.png" width="20%">
+			<p>No HTML5 as tabelas deixaram de ser um elemento exclusivamente estético e passaram a ser 
+			dinânicas.</br>
+			Os projetos mobile passaram a usar este elemento para criar filtros e outros recursos.</p>
+		</div>
+
+		<h3>Exemplos</h3>
+		
+		<div style="text-align: justify;">
+		Tabela Dinâmica
+		<table data-role="table" id="alunos" data-mode="columntoggle" class="ui-responsive table-stroke">
+			<thead> <!--linha cabeçalho-->
+				<tr>
+					<th data-priority="2">R.A.</th>
+					<th data-priority="1">Nome</th>
+					<th data-priority="3">Nota</th>
+				</tr>
+			</thead>
+			<tbody> <!--corpo da tabela-->
+				<tr>
+					<td>192750</td> <td>Marcos Vinicius Santos</td> <td>8,0</td>
+				</tr>
+				<tr>
+					<td>192777</td> <td>Georgia Sampaio</td> <td>4,5</td>
+				</tr>
+				<tr>
+					<td>1924582</td> <td>Eduardo Oliveira Silva</td> <td>6,0</td>
+				</tr>
+				<tr>
+					<td>193311</td> <td>Victor Pimentel</td> <td>10,0</td>
+				</tr>
+			</tbody>			
+		</table>
+		
+		</br>
+		
+		Tabela Zebrada
+		<table data-role="table" id="Media" data-mode="columntoggle" class="ui-body-d ui-shadow ui-responsive table-stripe" data-column-btn-theme="b" data-column-btn-text="Filtro"
+		data-column-popup-theme="a">
+			<thead> <!--linha cabeçalho-->
+				<tr class="ui-bar-d">
+					<th data-priority="1">R.A.</th>
+					<th data-priority="3">Nota 1</th>
+					<th data-priority="3">Nota 2</th>
+					<th data-priority="2">Média</th>
+				</tr>
+			</thead>
+			<tbody> <!--corpo da tabela-->
+				<tr>
+					<td>Marcos Vinicius Santos</td> <td>9,0</td> <td>10,0</td> <td>8,0</td>
+				</tr>
+				<tr>
+					<td>Georgia Sampaio</td> <td>3,0</td> <td>6,0</td> <td>4,5</td>
+				</tr>
+				<tr>
+					<td>Eduardo Oliveira Silva</td> <td>10,0</td> <td>2,0</td> <td>6,0</td>
+				</tr>
+				<tr>
+					<td>Victor Pimentel</td> <td>10,0</td> <td>10,0</td> <td>10,0</td>
+				</tr>
+			</tbody>			
+		</table>
+		
+		</br></br>
+		<form class="ui-filterable">
+			<legend>Filtro Simples</legend>
+			<input data-type="search" id="filtrobasico"> <!--caixa de busca-->
+		</form>
+		<ul data-role="listview" data-filter="true" data-input="#filtrobasico">
+			<li>Marcos Vinicius Santos</li>
+			<li>Georgia Sampaio</li>
+			<li>Eduardo Oliveira Silva</li>
+			<li>Victor Pimentel</li>
+			<li>Maria de Souza Santos</li>
+			<li>Simone Marçal</li>
+		</ul>
+		
+		</br></br>
+		<form class="ui-filterable">
+			<legend>Filtro com Tabela</legend>
+			<input data-type="search" id="filtrobasico2"> <!--caixa de busca-->
+		</form>
+		
+		<table data-role="table" id="filtra_alunos" data-filter="true" data-input="#filtrobasico2" class="ui-body-d ui-shadow ui-responsive table-stripe">
+			<thead> <!--linha cabeçalho-->
+				<tr>
+					<th data-priority="2">R.A.</th>
+					<th data-priority="1">Nome</th>
+					<th data-priority="3">Nota</th>
+				</tr>
+			</thead>
+			<tbody> <!--corpo da tabela-->
+				<tr>
+					<td>192750</td> <td>Marcos Vinicius Santos</td> <td>8,0</td>
+				</tr>
+				<tr>
+					<td>192777</td> <td>Georgia Sampaio</td> <td>4,5</td>
+				</tr>
+				<tr>
+					<td>1924582</td> <td>Eduardo Oliveira Silva</td> <td>6,0</td>
+				</tr>
+				<tr>
+					<td>193311</td> <td>Victor Pimentel</td> <td>10,0</td>
+				</tr>
+			</tbody>			
+		</table>
+		</div>
+		</section>
+			
+		<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c">	<!--position define local--> <!--footer = rodapé -->
+			<h4>By Miguel Batista</h4>
+		</footer> 																		<!--Fim da footer-->
+		
+	</div>
+</body>
+</html>			
+		
+	
+			

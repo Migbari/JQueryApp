@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aplicativo Hello World</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Faz redenrização(responsividade) da aplicação em relação ao dispositivo-->
+		<!--maximum-scale=3 - tamanho maximo em relação ao dispositivo, minimum-scale - tamanho minimo...-->
+		<!--user-scalable="no" - aplicação não terá zoom-->
+		
+		
+		<!--Acessar o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+	
+			
+	<body>	<!--Div com id para index e links pg inicial-->
+		<div data-role="page" id="pag1"> <!--contentação da página-->
+			<header data-role="header" id="cabeçalho" data-theme="b"> <!--data-theme=tema, a e b padrao-->
+			<!--contentação de cabeçalho-->
+				<h2>App JQuery Mobile</h2>
+			</header>
+			
+			<section data-role="content"> <!--contentação section-->
+			
+				<ul data-role="listview"> 
+					<li><a href="introducao.html"><img src="imagem/i.png" height="50%">
+					Introdução </br>
+					</a>
+					</li>
+					
+					<li><a href="cdn.html">
+						<img src="imagem/c.png" height="50%">
+						CDN</a>
+					</li>
+					<li>
+						<a href="dom.html">
+						<img src="imagem/d.png" height="50%">
+						DOM</a>
+					</li>
+					<li><a href="dwr.html">
+						<img src="imagem/r.png" height="50%">
+						Responsividade</a>
+					</li>
+					<li><a href="widget.html">
+						<img src="imagem/w.png" height="50%">
+						Widget</a>
+					</li>
+					</ul>	
+			</section> <!--Fim da section-->
+			
+			<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local-->
+				<h4>By Miguel Batista</h4>
+			</footer> <!--Fim da footer-->
+	 	</div> <!--Fim popup-->  <!---->
+	
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doc Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Conexão o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+
+<body>
+	<div data-role="page" id="pag6"> <!--Pagina 6-->
+		<header data-role="header" id="cabeçalho" data-theme="b"> <!--Cabeçalho-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">Return</a>
+			<!--role="button"criou botao, rel="back" fez voltar, icon="arrow-1 criou ícone botao, iconpos="notext" não permitiu texto como mostra acima-->
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div> 	<!-- data-role="navbar" - Cria menu de botões-->
+		</header> 																	<!--class="ui-body-a" - Muda estilo de cor do menu-->
+																					<!--data-iconpos="left" - Posiciona os icones dos botões a esquerda-->
+												
+																																				
+	<section data-role="content" id="corpo">
+		<div style="text-align: center"> <!--CSS centraliza conteúdo da DIV-->
+			<img src="imagem/iconsPlacares.png" width="20%">
+			<p>Os controles deslizantes ou placares são um dos recursos que a W3C trouxe no HTML5.</br>
+			A grande vantagem dos controles deslizantes nos projetos Mobile é que o usuário não precisa
+			usar o teclado para inserir um valor.</p>
+		</div>
+
+		<h3>Exmplos</h3>
+
+		<div style="text-align: justify"> <!--CSS cetralizar conteúdo DIV-->
+		
+				<form>
+				<p>Liga/Desliga</p>
+				<select name="slider" id="flip1" data-role="slider">
+					<option value="off"></option>
+					<option value="on"></option>
+				</select>
+				</form>
+				
+				<form>
+					<label for="slider1">Controle deslizante Simples</label>
+					<input type="range" name="slider1" id="slider1" min="0" max="20" value="5">
+				</form>
+				
+				<form>
+					<label for="slider2">Controle deslizante com intervalo determinado</label>
+					<input type="range" name="slider2" id="slider2" min="0" max="20" step=".5" value="7.5">
+				</form>
+				
+				<form>
+					<label for="slider3">Controle deslizante com Cor</label>
+					<input type="range" name="slider3" id="slider3" data-highlight="true" min="0" max="20" value="10">
+				</form>
+				
+				<form>
+					<label for="slider4">Controle deslizante com Tema</label>
+					<input type="range" name="slider4" id="slider4" data-track-theme="b" data-theme="b" min="0" max="20" value="15">
+				</form>
+				
+				<form>
+					<label for="slider5">Controle deslizante Simples</label></br>
+					<input type="range" name="slider5" id="slider5" data-mini="true" min="0" max="20" value="17.5" step=".1"> <!--VERIFICAR data-mini DANDO ERRO-->
+				</form>
+		</div>
+	</section>
+	
+		<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local--> <!--footer = rodapé -->
+			<h4>By Miguel Batista</h4>
+		</footer> <!--Fim da footer-->
+	
+	</div>
+</body>
+</html>	
+	
+				

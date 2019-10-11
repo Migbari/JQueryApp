@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title>Doc JQuery Mobile</title>
+			<meta charset ="UTF-8"> 
+			<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+			<!--Conexão com o Jquery Mobile e copiar as TAGs para conexão-->
+			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+			<!--Fim conexão com JQuery-->
+		</head>
+
+<body>
+<div data role="page" id="pag1">
+	<header data-role="header" id="cabeçalho" data-theme="b">
+		<a href="#" data-role="button" dat-position="fixed" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+			<h2>App Jquery Mobile</h2>
+				<div data-role="navbar" class="ui-body-a" data-iconpos="left">
+					<!--
+					data-role="navbar" - Cria um menu botões.
+					class="ui-body-a" - Muda o estilo de cor do menu.
+					data-iconpos="left" - Posicipma os ícones dos botões a esquerda.				
+					-->
+					<ul>
+						<li><a href="imagens_r.html" data-icon="action">Imagens</a></li>
+						<li><a href="grids_r.html" data-icon="grid">Grade</a></li>
+						<li><a href="fonte_r.html" data-icon="bars">Fontes</a></li>
+					</ul>
+				</div>
+			</header>
+			
+<section data-role="content" id="corpo" class="ui-content">
+	<div style="text-align: center;">
+	<h2>O uso de Grids</h2>
+	<p> Os grids são elementos não visuais do Jquery Mobile que permitem dividir a área de trabalho em vários
+	espaços.</br>
+	A vantagem de se trabalhar com grids e que cada um dos espaços é calculado de forma responsiva e
+	qualquer o tamanho dos objetos dentro de cada uma das células do grid são proporcionais a ele.</p>
+	
+	<div>
+		<div class="ui-grid-b"</div>
+		<div class="ui-block-a"><div class="uibar ui-bar-a">Bloco A</div></div>
+		<div class="ui-block-b"><div class="uibar ui-bar-a">Bloco B</div></div>
+		<div class="ui-block-c"><div class="uibar ui-bar-a">Bloco C</div></div>
+	
+	<div class="ui-block-a"><div class="ui-bar ui-bar-a"> 
+		<img src="imagem/ico_facebook.png" height=100% width=100% alt="icone facebook"></div></div>
+	<div class="ui-block-b"><div class="ui-bar ui-bar-a"> 
+		<img src="imagem/ico-instagram.png" height=100% width=100% alt="icone instagram"></div></div>
+	<div class="ui-block-c"><div class="ui-bar ui-bar-a"> 
+		<img src="imagem/ico-snapchat.png" height=100% width=100% alt="icone snapchat"></div></div>
+	<div class="ui-block-a"><div class="ui-bar ui-bar-a"> 
+		<img src="imagem/ico-twitter.png" height=100% width=100% alt="icone twitter"></div></div>	
+	<div class="ui-block-b"><div class="ui-bar ui-bar-a"> 
+		<img src="imagem/ico-whatsapp.png" height=100% width=100% alt="icone whatsapp"></div></div>	
+	<div class="ui-block-c"><div class="ui-bar ui-bar-a"> 
+		<img src="imagem/ico-youtube.png" height=100% width=100% alt="icone youtube"></div></div>	
+	</div>
+
+</section>		
+
+		<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"><!--position define local-->
+			<h4>By Miguel Batista</h4>
+		</footer> <!--Fim da footer-->
+</div>		
+</body>
+
+</html>	
+
+				

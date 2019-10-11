@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<head>
+			<title>Doc JQuery Mobile</title>
+			<meta charset ="UTF-8"> 
+			<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+							
+			<!--Conexão com o Jquery Mobile e copiar as TAGs para conexão-->
+			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+			<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+			<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+			<!--Fim conexão com JQuery-->
+			
+			<!--Conexão de fontes do Google-->
+			<link href="https://fonts.googleapis.com/css/css?family=Lobster|Roboto|ZCOOL+KuaiLe" rel="stylesheet">
+			
+			<style>
+				@media screen and (max-width:480px) {
+					html {font-size: 50%;}
+				}
+				@media screen and (min-width:481px) and (max-width:768px) {
+					html {font-size: 100%;}
+				}
+			<!-- Media Queries - Adaptam a pagina ao tamanho do dispositivo (neste exemplo 50% do tamanho 
+				original de fonte se o dispositivo tiver resolução de até 480px e 100% se entre 481px a 768px)	-->
+			</style>
+		</head>
+
+<body>
+<div data role="page" id="pag1">
+	<header data-role="header" id="cabeçalho" data-theme="b">
+		<a href="#" data-role="button" dat-position="fixed" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left"></a>
+			<h2>App Jquery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left">
+				<ul>
+					<li><a href="imagens_r.html" data-icon="action">Imagens</a></li>
+					<li><a href="grids_r.html" data-icon="grid">Grade</a></li>
+					<li><a href="fonte_r.html" data-icon="bars">Fontes</a></li>
+				</ul>
+			</div>
+	<!--formulário--->
+	<section data-role="content" id="corpo" class="ui-bar" data-theme="a"> 
+		<div style="text-align: center;">
+			<h2>A responsividade de Fontes</h2>
+				<p>No JQuery Mobile é possível definir o tipo e tamanho de uma fonte usando a ferramenta <strong>ThemeRoller</strong>,
+				mas adapta-la de forma responsiva é uma tarefa um pouco mais difícil.</br>
+				O <strong>@media screen</strong>, usa a informação criada pela metatag <strong>viewport</strong>
+				para redimensionar o tamanho de uma média (ou fonte) de acordo com esta informação, conforme o exemplo</p>
+		</div>
+		
+		<h1>Exemplos de Fontes do Google </h1>	
+		<p>-----------------------</p>
+		<div style="text-align: justify;">
+			<h2>Roboto</h2>
+			<p><span style="font-family: 'Roboto', sans-serif;">O vídeo fornece uma meneira poderosa de ajudá-lo a provar seu argumento.
+			Ao clicar em Vídeo Online, você pode colar o código de inserção do vídeo que
+			deseja adicionar. Você também pode difitar uma palavra-chave para pesquisar online o vídeo mais
+			adequado ao seu documento. Para dar ao documento uma aparência profissional, o Word fornece designs
+			de cabeçalho, rodapé, folha de rosto e caixa de texto que se complementam entre si.</span></p>
+
+			<h2>ZCool KuaiLe</h2>
+			<p><span style="font-family: 'ZCool KuaiLe', cursive;">Por exemplo, você pode adicionar uma folha de rosto,
+			um cabeçalho e uma barra lateral correspondentes. Clique em Inserir e escolha os elementos desejados nas
+			diferentes galerias. Temas e estilos também ajudam a manter seu documento coordenado. Quando você clica
+			em Design e escolhe um novo tema, as imagens, gráficos e elementos gráficos SmartArt são alterados para
+			corresponder ao novo tema.</span></p>				
+		
+			<h2>Times New Roman</h2>
+			<p><span style="font-family: 'Times New Roman', cursive;">Quando você aplica estilos, os títulos são alterados para
+			coincidir com o novo tema. Economize tempo no Word com novos botões que são mostrados no local em que
+			você precisa deles. Para alterar a maneira como uma imagem se ajusta ao seu documento, clique nela e um
+			botão de opções de layout será exibido ao lado. Ao trabalhar em uma tabela, clique no local onde deseja 
+			adicionar uma linha ou uma coluna e clique no sinal de adição.</span></p>
+		</div>		
+	<!-- Botão de créditos -->
+	<div align="right">
+	<!-- Botão popup dos créditos -->
+	<a href="#popmenu" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-action ui-btn-icon-left" data-transition="slideup">Crédito</a></div>	
+	
+	</section>
+	
+<footer data-role="footer" id="rodape" data-theme="c">
+			<h4>By Miguel Batista</h4>
+</footer> <!--Fim da footer-->
+			
+		<!--Popup-->	
+		<div data-role="popup" id="popmenu" class="ui-content" style="max-width:200px">
+			<div align="right"><img src="imagem/gfontes.png" height="100%" width="100%"></div>		
+		</div>
+</div>
+
+</body>	
+</html>	

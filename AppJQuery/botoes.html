@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Doc Jquery Mobile</title>
+		<meta charset ="UTF-8"> <!--Padrão de caracteres-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+		<!--Conexão o Jquery Mobile e copiar as TAGs para conexão-->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--Fim conexão com JQuery-->
+	</head>
+
+<body>
+	<div data-role="page" id="pag2"> <!-- página 3-->
+		<header data-role="header" id="cabeçalho" data-theme="b"> <!--Cabeçalho-->
+			<a href="#" data-role="button" data-rel="back" data-icon="arrow-l" data-iconpos="notext" class="ui-btn-left">Return</a>
+			<!--role="button"criou botao, rel="back" fez voltar, icon="arrow-1 criou ícone botao, iconpos="notext" não permitiu texto como mostra acima-->
+			<h2>App JQuery Mobile</h2>
+			<div data-role="navbar" class="ui-body-a" data-iconpos="left"></div>
+		</header>
+		
+		<section data-role="content" id="corpo"> <!--contentação section-->
+			<div style="text-align:center">
+				<img src="imagem/iconsBotao.png" width="20%">
+				<p> O JQuery Mobile Permite a criação de botões usando três ipos de TAGs, as TAGs <strong>a
+				</strong>,<strong>button</strong> e <strong>input</strong>.
+					A apicação de cada uma esta vinculada ao contexto do projeto.</p>
+			</div>
+			
+			<h3>Exemplos</h3>
+			
+			<div style="text-align: justify">
+			Botões simples </br>
+			<a href="#" class="ui-btn">Links</a>
+			<button class="ui-btn">Botão</button>
+			<input type="button" value="Formulário">
+			<button type="submit" class="button">Enviar</button>
+			
+			Botões Agrupados </br>
+			<div data-role="controlgroup" data-type="horizontal"> 
+				<a href="#" class="ui-btn">Botão A</a>
+				<a href="#" class="ui-btn">Botão B</a>
+				<a href="#" class="ui-btn">Botão C</a>
+			</div>
+			
+			Botões mesma linha, cantos redondos e com sombra </br>
+				<a href="#" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all">Botão D</a>
+				<a href="#" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all">Botão E</a>
+				<a href="#" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all">Botão F</a></br>
+			
+			Botões com ícones</br>
+			<div data-role="controlgroup" data-type="vertical"> 
+				<a href="#" class="ui-btn ui-icon-arrow-1 ui-btn-icon-left">Botão G</a>
+				<a href="#" class="ui-btn ui-icon-arrow-r ui-btn-icon-right">Botão H</a>
+				<a href="#" class="ui-btn ui-icon-arrow-u ui-btn-icon-top">Botão I</a>
+				<a href="#" class="ui-btn ui-icon-arrow-d ui-btn-icon-bottom">Botão J</a>
+				<a href="#" class="ui-btn ui-icon-audio ui-btn-icon-notext">Botão K</a>
+			</div>
+			
+			Botões por tema</br>
+			<div data-role="controlgroup" data-type="horizontal"> 
+				<a href="#" class="ui-btn ui-icon-camera ui-btn-icon-notext ui-btn-b"></a>
+				<a href="#" class="ui-btn ui-icon-clock	ui-btn-icon-notext ui-btn-a"></a>
+				<a href="#" class="ui-btn ui-icon-video	ui-btn-icon-notext ui-btn-b"></a>
+				<a href="#" class="ui-btn ui-icon-edit	ui-btn-icon-notext ui-btn-c"></a>
+			</div>
+	</div>
+</section>
+
+<footer data-role="footer" id="rodape" data-position="fixed" data-theme="c"> 
+			<!--footer = rodapé -->
+				<h4>By Miguel Batista</h4>
+			</footer> <!--Fim da footer-->
+	</div>
+</body>
+</html>
+			
